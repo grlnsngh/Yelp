@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkRed"
+        android:paddingLeft="32dp"
+        android:paddingTop="16dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="16dp">
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/autotv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:completionHint="Select a Restaurant"
+            android:completionThreshold="1"
+            android:hint="Search Restaurnt"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
